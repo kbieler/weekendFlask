@@ -1,0 +1,27 @@
+{% extends 'components/layout.html' %}
+
+{% block content %}
+<h1>Rick and Morty Episode Index</h1>
+    <div>
+        <table>
+            <tr>
+                <th>Episode Name</th>
+                <th>Episode Number</th>
+                <th>Air Date</th>
+                
+                    
+            </tr>
+            {% for key in episodes %}
+            <tr>
+                <td>{{ episodes[key].name }}</td>
+                <td>{{ episodes[key].eptag }}</td>
+                <td>{{ episodes[key].airdate }}</td>
+                
+            </tr>
+            % endfor %
+            
+        </table>
+    </div>
+
+{% endblock content %}
+
