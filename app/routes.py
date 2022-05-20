@@ -1,7 +1,7 @@
 from app import app
 from flask import render_template
 import requests as r
-from .templates.services import getEpisode
+from .templates.services import getEpisode, getImages
 
 
 @app.route('/')
@@ -14,3 +14,7 @@ def ricks():
     context = getEpisode()
     return render_template('ricks.html', **context)
    
+@app.route('/about')
+def about():
+    contexts = getImages()
+    return render_template('about.html', **contexts)
