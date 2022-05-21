@@ -1,0 +1,59 @@
+.hero-image{
+    background-image: linear-gradient(rgba(78, 114, 136, 0.5),rgba(5, 19, 36, 0.45)),url("https://wallpaperforu.com/wp-content/uploads/2021/08/Wallpaper-Rick-And-Morty-Art-Rick-Sanchez-Morty-Smith25-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 30%;
+    position: relative;
+    height: 275px;
+    margin-top: 0px;
+}
+
+.hero-text{
+    color: rgb(244, 240, 246);
+    text-shadow: 3px 3px 5px rgb(12, 12, 12);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%)}
+
+.main{
+    font-family: 'Oswald', sans-serif;
+}
+
+#homebody{
+    background-image: url("../images/RM-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2{
+    text-align: center;
+    text-shadow: 1px 1px 3px white;
+    position: relative;
+}
+
+#meseek{
+    position: relative;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(182, 239, 220);
+}
+
+#schwifty{
+    max-width: 75%;
+    height: auto;
+}
+
+#slideimgs{
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+}

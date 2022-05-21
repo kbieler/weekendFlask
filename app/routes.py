@@ -18,3 +18,7 @@ def ricks():
 def about():
     contexts = getImages()
     return render_template('about.html', **contexts)
+
+@app.route('/schwifty')
+def schwifty():
+    return render_template('schwifty.html')

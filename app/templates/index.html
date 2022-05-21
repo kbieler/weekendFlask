@@ -1,10 +1,14 @@
 {% extends 'components/layout.html' %}
 
 {% block content%}
-<h3>{{ challenge }}</h3>
-
-<div>
-    <img src ="https://media.giphy.com/media/DgLsbUL7SG3kI/giphy.gif" alt="Meseeks! Look at me!">
-</div>
-
+<body id="homebody">
+    <div class="main">
+        <h2>{{ challenge }}</h2>
+        <br>
+        <br>
+        <div id="meseek">
+            <img src ="https://media.giphy.com/media/DgLsbUL7SG3kI/giphy.gif" alt="Mr.Meseeks! Look at me!">
+        </div>
+    </div>
+</body>
 {% endblock content%}
