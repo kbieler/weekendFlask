@@ -1,0 +1,29 @@
+{% extends 'components/layout.html' %}
+
+{% block header %}
+ 
+<div id="pickrick">
+    <br>
+<center><h1>Pick-A-Rick</h1></center>
+    <br>
+</div>
+{% endblock header %}
+{% block content %}
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {% for x in episodes %}
+                {{ episodes[x].name }}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="rickall">
+        <img class="img-fluid" src="static/images/total_rickall.png">
+    </div>
+</div>
+{% endblock content %}

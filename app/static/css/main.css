@@ -33,11 +33,12 @@ h2{
     text-align: center;
     text-shadow: 1px 1px 3px white;
     position: relative;
+    margin-top: 20px;
 }
 
 #meseek{
-    position: relative;
     justify-content: center;
+    border: 3px rgb(12, 12, 12);
 }
 
 body{
@@ -56,4 +57,27 @@ body{
     justify-content: center;
     align-content: center;
     margin: 20px;
+}
+
+#rickipedia{
+    font-family: 'Get Schwifty';
+    font-size: 25px;
+    text-shadow: 2px 2px 3px rgb(76, 180, 76);
+}
+
+#video{
+    margin: 60px;
+}
+
+#pickrick{
+    font-family: 'Get Schwifty';
+    font-size: larger;
+    text-shadow: 2px 2px 4px rgb(76, 180, 76);
+}
+
+#rickall{
+    width: 60%;
+    height: auto;
+    border: solid 4px black;
+    justify-content: center;
 }

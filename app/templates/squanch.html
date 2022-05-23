@@ -1,0 +1,55 @@
+{% extends 'components/layout.html' %}
+{% block header %}
+<div class="hero-image">
+    <div class="hero-text">
+       <p>“There’s a lesson here, and I’m not going to be the one to figure it out.” — Rick</p>
+    </div>
+  </div>
+  {% endblock header %}
+  <br>
+  <br>
+{% block content %}
+<div class="container">
+    <div class="col">
+        <form class="form-inline">
+        <div class="form-group mb-2">
+            <label for="staticPrompt" class="sr-only">Search</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Find a character!">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="char_search" class="sr-only">Meseek</label>
+            <input type="text" class="form-control" id="char_search" placeholder="enter a name here">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Meseek</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">ID#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Species</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for x in all_char %}
+            <tr>
+              <td>{{ all_char[x].id }}</td>
+              <td>{{ all_char[x].name }}</td>
+              <td>{{ all_char[x].species }}</td>
+              <td>{{ all_char[x].status }}</td>
+            </tr>
+          {% endfor %}  
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
