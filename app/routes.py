@@ -1,7 +1,8 @@
 from app import app
-from flask import render_template
 import requests as r
 from .templates.services import getEpisode, getImages, getChar
+from flask_login import login_required
+from flask import Blueprint, render_template, request, redirect, url_for, flash
 
 
 @app.route('/')
@@ -20,19 +21,23 @@ def about():
     return render_template('about.html', **contexts) 
 
 @app.route('/schwifty')
+@login_required
 def schwifty():
     return render_template('schwifty.html')
 
 @app.route('/squanch.html')
+@login_required
 def squanch():
-    context = getChar()
+    context = getChar()    
     return render_template('squanch.html', **context)
 
 @app.route('/go.html')
+@login_required
 def go():
     return render_template('go.html')
 
 @app.route('/yourself.html')
+@login_required
 def yourself():
     context = getEpisode()
     return render_template('yourself.html', **context)

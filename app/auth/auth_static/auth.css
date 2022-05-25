@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(94, 90, 146);
+}
+
+#sideimg {
+    max-height: 80vh;
+    margin-top: 2vh;
+    border-radius: 35px;
+}
+
+h3{
+    font-family: 'Get Schwifty';
+    text-shadow: 2px 2px 3px rgb(76, 180, 76);
+}

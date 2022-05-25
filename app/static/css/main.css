@@ -53,9 +53,6 @@ body{
 #slideimgs{
     max-width: 400px;
     height: auto;
-    position: relative;
-    justify-content: center;
-    align-content: center;
     margin: 20px;
 }
 
