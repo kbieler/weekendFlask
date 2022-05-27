@@ -2,10 +2,10 @@
 #change the FLASK_APP variable in .env to run.py
 
 from app import app
-from app.models import db, Whatsit, User
+from app.models import db, Whatsit, User, Animal, Post
 
 @app.shell_context_processor
 def shell_context():
-    return {'db': db, 'Whatsit': Whatsit, 'User': User}
+    return {'db': db, 'Whatsit': Whatsit, 'User': User, 'Animal': Animal, 'Post': Post}
 
 
